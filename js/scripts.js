@@ -18,7 +18,7 @@ TotalOrder.prototype.assignId = function() {
 
 function Pizza(size) {
   this.size = size;
-  this.toppings = []
+  this.toppings = [];
 }
 
 Pizza.prototype.addToppings = function(topping) {
@@ -27,7 +27,6 @@ Pizza.prototype.addToppings = function(topping) {
 
 Pizza.prototype.getPrice = function() {
   let price = 0;
-}
 
   if(this.size === "small") {
     price = 10;
@@ -41,6 +40,25 @@ Pizza.prototype.getPrice = function() {
     price = 26;
   }
 
+  this.toppings.forEach(function() {
+    price +=1;
+  });
+
+  console.log("price: ", price);
+    return price;
+}
+
+TotalOrder.prototype.TotalPrice = function() {
+  let totalPrice = 0;
+  this.pizzas.forEach(function(pizza) {
+    totalPrice += pizza.getPrice();
+    this.totalPrice = totalPrice ;
+  });
+  return totalPrice;
+}
+
+
+
 
 
 $(document).ready(function() {
@@ -49,7 +67,7 @@ $(document).ready(function() {
     const size;
     //checkbox info
     $("input:checkbox[name=size]:checked").each(function() {
-      const inputtedSize = $(this).val().[0];
+      const inputtedSize = $(this).val().split("-")[0];
       size = inputtedSize;
     });
   });
