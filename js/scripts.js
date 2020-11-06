@@ -48,6 +48,18 @@ $(document).ready(function() {
     event.preventDefault();
     const size;
     //checkbox info
+    $("input:checkbox[name=size]:checked").each(function() {
+      const inputtedSize = $(this).val().[0];
+      size = inputtedSize;
+    });
+  });
+
+    const toppings = [];
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      let inputtedToppings = $(this).val();
+      toppings.push(inputtedToppings);
+    });
+
 
 
       const orderName = $("#name").val();

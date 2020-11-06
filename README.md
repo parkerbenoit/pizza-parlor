@@ -19,7 +19,10 @@
 | Test | Input | Output |
 |:---------------------- | :----------------------- | :----------------|
 
-|Name and Phone inputs should log| Parker Benoit, 206 123 4567 | Parker Benoit 206 123 4567 |
+| Name and Phone inputs should log| Parker Benoit, 206 123 4567 | Parker Benoit 206 123 4567 |
+| Select pizza size | pizza size | returns size user chose from checkbox|
+| Pick pizza toppings | toppings | returns toppings user chose from checkboxes |
+
 
 
 
