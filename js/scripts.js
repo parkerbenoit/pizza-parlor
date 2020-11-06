@@ -66,12 +66,11 @@ $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     const size;
-    //checkbox info
     $("input:checkbox[name=size]:checked").each(function() {
       const inputtedSize = $(this).val().split("-")[0];
       size = inputtedSize;
     });
-  });
+  //});
 
     let toppings = [];
     $("input:checkbox[name=toppings]:checked").each(function() {
@@ -90,7 +89,13 @@ $(document).ready(function() {
       $("input:checkbox[name=toppings]:checked").each(function() {
         newPizza.addToppings($(this).val());
       });
-      
+      $(".name").append(" " + "<em>" + orderName + "</em>");
+      $(".phone-number").append(phoneNumber);
+      $(".size").append(" " + size)
+      totalOrder.addPizza(newPizza);
+      $("#order-total").append("$" + totalOrder.TotalPrice());
+      $("#order-summary").show();
+    console.log(totalOrder);
 
   });
 
