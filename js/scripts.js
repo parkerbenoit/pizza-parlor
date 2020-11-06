@@ -27,12 +27,7 @@ Pizza.prototype.getPrice = function() {
     price = 26;
   }
 
-  console.log("price: " price);
-    return price;
-}
 
-
-// User Interface Logic
 
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
@@ -43,7 +38,7 @@ $(document).ready(function() {
       const phoneNumber = $("input#phone-number").val();
       console.log(orderName, phoneNumber);
       const order = new TotalOrder(orderName, phoneNumber);
-      //console.log(totalOrder);
+      console.log(totalOrder);
   });
 
 });
