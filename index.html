@@ -13,12 +13,14 @@
       <h1>Parker's Pizza Parlor</h1>
     </div>
       <form id="pizzaOrder">
+
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name">
           <label for="phone-number">Phone Number</label>
           <input type="text" id="phone-number">
         </div>
+
         <div class="form-group">
           <h4>Size</h4>
           <input type="checkbox" name="pizza-size" value="small">Small - 10 inch <br>
@@ -28,7 +30,15 @@
           <input type="checkbox" name="pizza-size" value="XXL"> XXL - 20 inch<br>
         </div>
 
-        
+        <div class="form-group">
+          <h4>Toppings</h4>
+          <input type="checkbox" name="pizza-toppings" value="Peperoni">Peperoni<br>
+          <input type="checkbox" name="pizza-toppings" value="Bacon">Bacon<br>
+          <input type="checkbox" name="pizza-toppings" value="Green Peppers">Green Peppers<br>
+          <input type="checkbox" name="pizza-toppings" value="Tomatos">Tomatoes<br>
+          <input type="checkbox" name="pizza-toppings" value="Olives">Olives<br>
+          <input type="checkbox" name="pizza-toppings" value="Onions">Onions<br>
+        </div>
 
 
       <button type="submit" class="btn btn-warning" id="order">Place Order!</button>
