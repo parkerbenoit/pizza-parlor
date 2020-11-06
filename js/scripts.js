@@ -1,4 +1,4 @@
-// Business Logic
+// Business Logic --------------------------------------------
 
 function TotalOrder(phoneNumber, name) {
   this.phoneNumber = phoneNumber;
@@ -58,6 +58,7 @@ TotalOrder.prototype.TotalPrice = function() {
 }
 
 
+// User Intergace --------------------------------------- 
 
 
 
@@ -72,7 +73,7 @@ $(document).ready(function() {
     });
   });
 
-    const toppings = [];
+    let toppings = [];
     $("input:checkbox[name=toppings]:checked").each(function() {
       let inputtedToppings = $(this).val();
       toppings.push(inputtedToppings);
@@ -85,7 +86,11 @@ $(document).ready(function() {
       console.log(orderName, phoneNumber);
       const order = new TotalOrder(orderName, phoneNumber);
       
-
+    let newPizza = new Pizza(size);
+      $("input:checkbox[name=toppings]:checked").each(function() {
+        newPizza.addToppings($(this).val());
+      });
+      
 
   });
 
