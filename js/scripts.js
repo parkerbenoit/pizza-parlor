@@ -7,8 +7,18 @@ function TotalOrder(phoneNumber, name) {
   this.currentId = 0;
 }
 
+TotalOrder.prototype.addPizza = function(pizza) {
+  pizza.id = this.assignId();
+  this.pizzas.push(pizza);
+}
+TotalOrder.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+}
+
 function Pizza(size) {
   this.size = size;
+  this.toppings = []
 }
 
 Pizza.prototype.getPrice = function() {
@@ -38,7 +48,7 @@ $(document).ready(function() {
       const phoneNumber = $("input#phone-number").val();
       console.log(orderName, phoneNumber);
       const order = new TotalOrder(orderName, phoneNumber);
-      console.log(totalOrder);
+      //console.log(totalOrder);
   });
 
 });
