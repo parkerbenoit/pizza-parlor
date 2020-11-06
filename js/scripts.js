@@ -21,6 +21,10 @@ function Pizza(size) {
   this.toppings = []
 }
 
+Pizza.prototype.addToppings = function(topping) {
+  this.toppings.push(topping);
+}
+
 Pizza.prototype.getPrice = function() {
   let price = 0;
 }
@@ -42,13 +46,17 @@ Pizza.prototype.getPrice = function() {
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
+    const size;
+    //checkbox info
 
 
       const orderName = $("#name").val();
       const phoneNumber = $("input#phone-number").val();
       console.log(orderName, phoneNumber);
       const order = new TotalOrder(orderName, phoneNumber);
-      //console.log(totalOrder);
+      
+
+
   });
 
 });
