@@ -57,10 +57,7 @@ TotalOrder.prototype.TotalPrice = function() {
   return totalPrice;
 }
 
-
-// User Intergace --------------------------------------- 
-
-
+// User Intergace ---------------------------------------
 
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
@@ -77,7 +74,6 @@ $(document).ready(function() {
       let inputtedToppings = $(this).val();
       toppings.push(inputtedToppings);
     });
-
 
 
       const orderName = $("#name").val();

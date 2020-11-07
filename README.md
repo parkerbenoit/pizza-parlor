@@ -19,14 +19,14 @@ This project is a webpage for Parker's Pizza Parlor, where you can order a pizza
 |:---------------------- | :----------------------- | :----------------|
 
 | Name and Phone inputs should log| Parker Benoit, 206 123 4567 | Parker Benoit 206 123 4567 |
-| Select pizza size | pizza size | returns size user chose from checkbox|
 
-^^these test ran and worked, now i cant get them to show
+//| Select pizza size | pizza size | returns size user chose from checkbox|//
 
-| Pick pizza toppings | toppings | returns toppings user chose from checkboxes |
-//| Return overall price of order | complete results from our html form with inputs from the checklist | a total price added together in regards to size and toppings chosen by user |//
+//| Pick pizza toppings | toppings | returns toppings user chose from checkboxes |//
 
+| Return overall price of order | complete results from our html form with inputs from the checklist | a total price added together in regards to size and toppings chosen by user |
 
+My tests have all worked at seperate times, but now that I figured out how to get my order price to print, my toppings and size won't...
 
 ## Known Bugs
 
