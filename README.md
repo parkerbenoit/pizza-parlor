@@ -12,6 +12,15 @@ This project is a webpage for Parker's Pizza Parlor, where you can order a pizza
 
 ## Setup/Installation Requirements
 
+1. Clone repository to desktop from within your terminal by using the "git clone (repository url)" command.
+2. From your desktop you will find a folder with this project within it, you can open it from your terminal by navigating to the folder with the "cd (folder name)" command, then entering "code ."
+
+ANOTHER OPTION
+
+1. Open your browser and head to https://github.com/parkerbenoit/pizza-parlor.git
+2. There will be a green button that says "code", click there and download zip
+
+GitHub Link: https://github.com/parkerbenoit/pizza-parlor.git
 
 ## Specs / Tests
 
@@ -30,7 +39,7 @@ My tests have all worked at seperate times, but now that I figured out how to ge
 
 ## Known Bugs
 
-Currently don't have user input displayed on page after clicking submit. Error message on line 68 of js file
+Currently don't have some user input displayed on page after clicking submit. Error message on line 68 of js file
 
 ## Contact Details
 
