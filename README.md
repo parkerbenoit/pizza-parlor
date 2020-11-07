@@ -20,14 +20,17 @@ This project is a webpage for Parker's Pizza Parlor, where you can order a pizza
 
 | Name and Phone inputs should log| Parker Benoit, 206 123 4567 | Parker Benoit 206 123 4567 |
 | Select pizza size | pizza size | returns size user chose from checkbox|
+
+^^these test ran and worked, now i cant get them to show
+
 | Pick pizza toppings | toppings | returns toppings user chose from checkboxes |
-| Return overall price of order | complete results from our html form with inputs from the checklist | a total price added together in regards to size and toppings chosen by user |
+//| Return overall price of order | complete results from our html form with inputs from the checklist | a total price added together in regards to size and toppings chosen by user |//
 
 
 
 ## Known Bugs
 
-Currently don't have user input displayed on page after clicking submit.
+Currently don't have user input displayed on page after clicking submit. Error message on line 68 of js file
 
 ## Contact Details
 

@@ -65,10 +65,10 @@ TotalOrder.prototype.TotalPrice = function() {
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
-    const size;
-    $("input:checkbox[name=size]:checked").each(function() {
-      const inputtedSize = $(this).val().split("-")[0];
-      size = inputtedSize;
+    let pizzaSize = [];
+    $("input:checkbox[name=pizza-size]:checked").each(function() {
+      const inputtedPizzaSize = $(this).val().split("-")[0];
+      pizzaSize = inputtedPizzaSize;
     });
   //});
 
@@ -83,18 +83,18 @@ $(document).ready(function() {
       const orderName = $("#name").val();
       const phoneNumber = $("input#phone-number").val();
       console.log(orderName, phoneNumber);
-      const order = new TotalOrder(orderName, phoneNumber);
+      const totalOrder = new TotalOrder(orderName, phoneNumber);
       
-    let newPizza = new Pizza(size);
+    let newPizza = new Pizza(pizzaSize);
       $("input:checkbox[name=toppings]:checked").each(function() {
         newPizza.addToppings($(this).val());
       });
       $(".name").append(" " + "<em>" + orderName + "</em>");
       $(".phone-number").append(phoneNumber);
-      $(".size").append(" " + size)
+      $(".size").append(" " + pizzaSize)
       totalOrder.addPizza(newPizza);
       $("#order-total").append("$" + totalOrder.TotalPrice());
-      $("#order-summary").show();
+      $("#order-summary").show(); //---------not showing right now?------- //
     console.log(totalOrder);
 
   });
